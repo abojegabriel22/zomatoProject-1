@@ -1,0 +1,204 @@
+
+body{
+    margin: auto;
+    background-color: #d9b6ca;
+}
+
+/* HEADER SECTION  */
+header{
+    height: 60px;
+    /* background-image: linear-gradient(270deg,#b447eb,#57aeff 95%); */
+    /* border: 5px solid hotpink; */
+    background-color: #3b2632;
+}
+
+.brand{
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-left: 1%;
+    text-transform: capitalize;
+}
+.socialLogo{
+    height: 50px;
+    float: right;
+}
+/* REST CONTENT  */
+.content{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 3%;
+    /* border: 5px solid red; */
+    display: inline-block;
+}
+.filter{
+    height: 500px;
+    width: 20%;
+    border: 3px solid grey;
+    float: left;
+}
+.filterH{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h5{
+    text-align: center;
+}
+.restContent{
+    height: 700px;
+    width: 70%;
+    /* border: 3px solid orange; */
+    margin-left: 7%;
+    float: left;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* FOOTER SECTION  */
+footer{
+    /* height: 120px; */
+    /* border: 5px groove green; */
+    background-color: #3b2632;
+    color: white;
+    text-align: center;
+
+}
+.footText{
+    font-size: 20px;
+}
+.footDiv{
+    display: inline-block;
+    width: 32%;
+    border-right: 2px solid white;
+}
+.noBorder{
+    border: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* LISTING DESIGNS */
+.imageDiv{
+    width: 100%;
+    height: 250px;
+    /* border: 2px solid rgb(175, 89, 89); */
+    display: flex;
+    box-shadow: 0px 3px 9px 4px grey;
+}
+.img{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    border-radius: 10%;
+    background-size: cover;
+}
+.img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    border: 0px solid gray;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: -3px 4px 32px grey;
+}
+.img > img:hover{
+    opacity: 0.8;
+    transform: scale(0.96);
+    border: 5px solid black;
+    cursor: pointer;
+    margin-top: -2%;
+    margin-left: -2%;
+}
+.texts{
+    margin-left: 5%;
+    /* border: 2px solid black; */
+}
+
+.texts > h1{
+    color: rgb(119, 88, 8);
+    margin-top: 0;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+.noborder{
+    font-size: 18px;
+    /* border: 2px solid blue; */
+}
+.red{
+    color: #3b2632;
+    margin-top: -4%;
+}
+.foodButton{
+    /* border: 2px solid blue; */
+    height: 50px;
+    width: 100%;
+    /* text-align: center; */
+}
+.foodButton > button{
+    width: 40%;
+    height: 100%;
+    border-radius: 10%;
+    border: 1px solid rgb(173, 149, 12);
+    background-color: rgb(119, 88, 8);
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid rgb(79, 87, 68);
+    box-shadow: -3px 2px 25px grey;
+    /* border: 2px solid pink; */
+}
+.nightlife{
+    margin-left: 3%;
+    /* border-radius: 10% ; */
+
+}
+
+.foodButton2{
+    height: 50px;
+    width: 100%;
+    margin-top: 3%;
+    /* border: 2px solid blue; */
+}
+.foodButton2 > button{
+    width: 45%;
+    height: 100%;
+    border-radius: 10%;
+    border: 1px solid rgb(173, 149, 12);
+    background-color: #5c4050;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid rgb(79, 87, 68);
+    box-shadow: -3px 2px 25px grey;
+}
+.foodButton2 > button:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.foodButton > button:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.nightlife2{
+    border: 2px solid rgb(63, 50, 27);
+    margin-left: 3%;
+}
+h3 > span{
+    font-size: 25px;
+}
+.texts > p{
+    border-right: 1px solid rgb(79, 87, 68);
+    box-shadow: -1px 1px 2px grey;
+    font-size: 20px;
+}
