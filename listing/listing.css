@@ -151,17 +151,18 @@ ul{
 .foodButton > button{
     width: 40%;
     height: 100%;
-    border-radius: 10%;
-    border: 1px solid rgb(173, 149, 12);
+    /* border-radius: 10%; */
+    /* border: 1px solid rgb(173, 149, 12); */
     background-color: rgb(119, 88, 8);
     color: white;
     font-size: 18px;
     border-right: 1px solid rgb(79, 87, 68);
-    box-shadow: -3px 2px 25px grey;
+    box-shadow: -3px 2px -15px grey;
     /* border: 2px solid pink; */
 }
 .nightlife{
     margin-left: 3%;
+    border: 2px solid rgb(63, 50, 27);
     /* border-radius: 10% ; */
 
 }
@@ -175,19 +176,20 @@ ul{
 .foodButton2 > button{
     width: 45%;
     height: 100%;
-    border-radius: 10%;
-    border: 1px solid rgb(173, 149, 12);
+    /* border-radius: 10%; */
+    /* border: 1px solid rgb(173, 149, 12); */
     background-color: #5c4050;
     color: white;
     font-size: 18px;
     border-right: 1px solid rgb(79, 87, 68);
-    box-shadow: -3px 2px 25px grey;
+    box-shadow: -3px 2px -15px grey;
 }
 .foodButton2 > button:hover{
     color: black;
     cursor: pointer;
     transform: scale(1.1);
 }
+
 .foodButton > button:hover{
     color: black;
     cursor: pointer;
@@ -197,6 +199,13 @@ ul{
     border: 2px solid rgb(63, 50, 27);
     margin-left: 3%;
 }
+.launch2{
+    border: 2px solid rgb(63, 50, 27);
+}
+.launch{
+    border: 2px solid rgb(63, 50, 27);
+}
+
 h3 > span{
     font-size: 25px;
 }
