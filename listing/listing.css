@@ -80,6 +80,8 @@ footer{
 }
 .noBorder{
     border: none;
+    font-size: 18px;
+    /* border: 2px solid; */
 }
 
 ul{
@@ -131,10 +133,11 @@ ul{
     text-transform: uppercase;
 }
 
-.noborder{
+ .noborder{
     font-size: 18px;
     /* border: 2px solid blue; */
-}
+    margin-top: -15px;
+} 
 .red{
     color: #3b2632;
     margin-top: -4%;
@@ -201,4 +204,17 @@ h3 > span{
     border-right: 1px solid rgb(79, 87, 68);
     box-shadow: -1px 1px 2px grey;
     font-size: 20px;
+}
+.writing{
+    /* border: 2px solid red; */
+    font-size: 30px;
+    /* margin-top: 10px; */
+    padding-top: 4px;
+
+}
+h4{
+    /* border: 2px solid purple; */
+    margin: -11px 0 5px 0;
+    color: #5c4050;
+    font-weight: bolder;
 }
