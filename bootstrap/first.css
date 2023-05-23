@@ -1,0 +1,38 @@
+
+
+.btn-purple{
+    background-color: purple;
+}
+.glyphicon-trash{
+    font-size: 25px;
+    color: red;
+}
+
+#first{
+    height: 200px;
+    background-color: rgb(141, 204, 141);
+}
+#second{
+    height: 200px;
+    background-color: rgb(59, 197, 59);
+}
+#third{
+    height: 200px;
+    background-color: rgb(161, 56, 175);
+}
+#fourth{
+    height: 200px;
+    background-color: rgb(74, 99, 211);
+}
+#fifth{
+    height: 200px;
+    background-color: rgb(46, 56, 46);
+}
+#sixth{
+    height: 200px;
+    background-color: rgb(26, 25, 77);
+}
+#seventh{
+    height: 200px;
+    background-color: rgb(204, 141, 141);
+}

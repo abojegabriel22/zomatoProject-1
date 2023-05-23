@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="brand">developer funnel</div>
+        <div class="social">
+            <a href="#">
+                <img src="https://i.ibb.co/YQpNwSZ/facebook.png" alt="facebook img" class="socialLogo">
+            </a>
+            <a href="#">
+                <img src="https://i.ibb.co/VHSf51F/instagram.png" alt="inst image" class="socialLogo">
+            </a>
+            <a href="#">
+                <img src="https://i.ibb.co/f8v7PyW/youtube.png" alt="youtube img" class="socialLogo">
+            </a>
+        </div>
+    </header>
+    <div class="search">
+        <div class="logo">
+            <span>d!</span>
+        </div>
+        <div class="heading">
+            find best place near you
+        </div>
+        <div class="dropdown">
+            <select id="city" onchange="getRest()">
+                <option>---SELECT YOUR CITY---</option>
+            </select>
+            <select id="restSelect">
+                <option>---SELECT YOUR RESTAURANTS---</option>
+            </select>
+        </div>
+    </div>
+    <div class="quicksearch">
+        <span class="quickHeading">Quick Search</span>
+        <span class="quickSubHeading">Find Restaurants By MealTime</span>
+        <div class="mainBox">
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="images/drinks.png" alt="drink">
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">Breakfast</a>
+                    </div>
+                    <div class="compSubHeading">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="images/drinks.png" alt="drink">
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading"><a href="../listing/listing.html">Breakfast</a></div>
+                    <div class="compSubHeading">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="images/drinks.png" alt="drink">
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading"><a href="../listing/listing.html">Breakfast</a></div>
+                    <div class="compSubHeading">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="images/drinks.png" alt="drink">
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading"><a href="../listing/listing.html">Breakfast</a></div>
+                    <div class="compSubHeading">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="images/dinner.png" alt="drink">
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading"><a href="../listing/listing.html">Breakfast</a></div>
+                    <div class="compSubHeading">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="images/dinner.png" alt="drink">
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading"><a href="../listing/listing.html">Breakfast</a></div>
+                    <div class="compSubHeading">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        
+        <p class="footText">&copy; Developer Funnel 2023</p>
+        <hr>
+        <div class="footDiv">
+            <ul>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footDiv">
+            <ul>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        
+        <div class="footDiv noBorder">
+            <ul>
+                
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        
+        
+    </footer>
+    <script src="home.js"></script>
+    <script>
+        window.onload = getCity();
+    </script>
+</body>
+</html>

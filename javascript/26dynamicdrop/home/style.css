@@ -1,0 +1,385 @@
+
+body{
+    margin: auto;
+    background-color: rgb(217, 182, 202);
+}
+
+/* HEADER SECTION  */
+header{
+    height: 60px;
+    /* background-image: linear-gradient(270deg,#b447eb,#57aeff 95%); */
+    /* border: 5px solid hotpink; */
+    background-color: #3b2632;
+}
+
+.brand{
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-left: 1%;
+    text-transform: capitalize;
+}
+.socialLogo{
+    height: 50px;
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+/* SEARCH SECTION */
+.search{
+    height: 450px;
+    /* border: 1px solid red; */
+    /* background-color: #d9b6ca; */
+    background-image: url(images/food-wallpaper.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 450px;
+
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 2%;
+    position: absolute;
+    font-size: 90px;
+    animation: revolve 10s linear infinite;
+}
+@keyframes revolve{
+    0%{
+        margin-left: 2%;
+        transform: rotate(10deg);
+    }
+    25%{
+        margin-left: 20%;
+        transform: rotate(90deg);
+    }
+    50%{
+        margin-left: 40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left: 80%;
+        transform: rotate(360deg);
+    }
+    100%{
+        margin-left: 40%;
+        transform: rotate(-360deg);
+    }
+}
+
+
+.logo > span{
+    margin-top: 15%;
+    margin-left: 20%;
+    position: absolute;
+}
+.heading{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15%;
+    margin-left: 30%;
+    position: absolute;
+}
+.dropdown{
+    height: 60px;
+    width: 50%;
+    /* border: 2px solid white; */
+    margin-left: 30%;
+    margin-top: 22%;
+    position: absolute;
+}
+select{
+    height: 60px;
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+#restSelect{
+    width: 59%;
+}
+
+/* QUICKSEARCH SECTION  */
+.quicksearch{
+    /* height: 800px; */
+    display: inline-block;
+    /* border: 5px double orange; */
+    /* background-color: #d24c98; */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+
+.quickHeading{
+    color: #3b2632;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    margin-left: 2%;
+
+}
+.quickHeading:hover{
+    font-size: 50px;
+    color: red;
+}
+
+.quickSubHeading{
+    color: gray;
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 2%;
+
+}
+.tileContainer{
+    height: 180px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 3%;
+    /* border: 2px solid black; */
+    box-shadow: 8px 12px 11px grey;
+    float: left;
+    animation: dance 5s infinite;
+}
+@keyframes dance{
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+
+
+.tileContainer:hover{
+    /* transform: scale(1.1); */
+    /* transform: skewX(30deg); */
+    /* transform: rotate(180deg); */
+    transform: translate(30px, 30px);
+}
+
+
+.tileComponent1{
+    width: 52%;
+    float: left;
+
+}
+.tileComponent1 >img{
+    width: 100%;
+    height: 100%;
+}
+    
+
+
+.tileComponent2{
+    width: 45%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+.compHeading{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3b2632;
+}
+.compSubHeading{
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: gray;
+}
+.compHeading >a{
+    color: #3b2632 !important;
+}
+
+/* FOOTER SECTION  */
+footer{
+    /* height: 120px; */
+    /* border: 5px groove green; */
+    background-color: #3b2632;
+    color: white;
+    text-align: center;
+
+}
+.footText{
+    font-size: 20px;
+}
+.footDiv{
+    display: inline-block;
+    width: 32%;
+    border-right: 2px solid white;
+}
+.noBorder{
+    border: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1600px) {
+    body{
+        background-color: rgb(217, 182, 202);;
+    }
+}
+@media screen and (max-width: 1300px) {
+    body{
+        background-color: rgb(240, 157, 132);
+    }
+    .dropdown{
+        margin-left: 30%;
+        margin-top: 26%;
+    }
+    .heading{
+        margin-top: 17%;
+        margin-left: 29%;
+    }
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgb(135, 180, 211);
+    }
+    .dropdown {
+        width: 87%;
+        margin-left: 15%;
+        margin-top: 51%;
+    }
+    .heading {
+        margin-top: 34%;
+        margin-left: 4%;
+    }
+    select{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body{
+        background-color: rgb(116, 80, 98);
+    }
+    .dropdown{
+        width: 55%;
+        margin-left: 27%;
+        margin-top: 28%;
+    }
+    .heading{
+        margin-top: 18%;
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: rgb(83, 133, 91);
+    }
+    .logo{
+        margin-left: 41%;
+    }
+    .heading {
+        margin-top: 23%;
+        margin-left: 15%;
+    }
+    .dropdown {
+        width: 74%;
+        margin-left: 16%;
+        margin-top: 36%;
+    }
+}
+/* @media screen and (max-width: 700px){
+    .dropdown {
+        width: 74%;
+        margin-left: 15%;
+        margin-top: 45%;
+    }
+    select{
+        font-size: 13px;
+    }
+    .heading {
+        margin-top: 30%;
+        margin-left: 4%;
+    }
+} */
+
+
+
+
+@media screen and (max-width: 600px) {
+    .heading {
+        margin-top: 35%;
+        margin-left: 2%;
+        font-size: 50px;
+    }
+    .dropdown {
+        width: 94%;
+        margin-left: 4%;
+        margin-top: 54%;
+    }
+    .logo{
+        margin-left: 35%;
+    }
+    select{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    select{
+        font-size: 11px;
+    }
+    .heading{
+        font-size: 36px;
+        margin-top: 52%;
+        margin-left: 4%;
+    }
+    .logo{
+        margin-left: 34%;
+        margin-top: 4%;
+    }
+    .dropdown{
+        margin-top: 75%;
+        margin-left: 3%;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .heading {
+        font-size: 32px;
+        margin-top: 57%;
+        margin-left: 3%;
+    }
+    select {
+        font-size: 9px;
+    }
+    .dropdown{
+        width: 78%;
+        margin-top: 83%;
+        margin-left: 9%;
+    }
+    #restSelect {
+        width: 58%;
+    }
+    .logo{
+        margin-left: 29%;
+    }
+}

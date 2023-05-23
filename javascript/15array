@@ -1,0 +1,134 @@
+
+let A = [2,4,5,15,58,188] > Array of numbers
+let B = ["aboje","bye","hello"] > Array of strings  // HOMOGENEOUS DATATYPE
+let c = [true,false,false,true,true,false,false] > array of Boolean
+
+// ARRAY IS A COLLECTION OF BOTH HOMOGENEOUS AND HETEROGENEOUS DATATYPE
+let a = [1,3,15,"aboje","sayHello",true,false,2,5]  //heterogeneous datatype
+
+
+var city = ["Abuja","Lagos","Delta","Kaduna"]
+console.log(city)
+['Abuja', 'Lagos', 'Delta', 'Kaduna']
+
+city.length
+4
+city[0]
+'Abuja'
+city[1]
+'Lagos'
+city[2]
+'Delta'
+city[3]
+'Kaduna'
+city.length-1
+3
+city[city.length-1]
+'Kaduna'
+
+
+var city = ["Abuja","Lagos","Delta","Kaduna"]
+undefined
+city
+(4) ['Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.push("Abia")
+5
+city
+(5) ['Abuja', 'Lagos', 'Delta', 'Kaduna', 'Abia']
+city.push("Benue","Borno")
+7
+city
+(7) ['Abuja', 'Lagos', 'Delta', 'Kaduna', 'Abia', 'Benue', 'Borno']
+
+var city = ["Abuja","Lagos","Delta","Kaduna"]
+undefined
+city.pop()
+'Kaduna'
+city
+(3) ['Abuja', 'Lagos', 'Delta']
+city.push("Benue","Borno")
+5
+city
+(5) ['Abuja', 'Lagos', 'Delta', 'Benue', 'Borno']
+city.pop(2)
+'Borno'
+city
+(4) ['Abuja', 'Lagos', 'Delta', 'Benue']
+city.pop(3)
+'Benue'
+city
+(3) ['Abuja', 'Lagos', 'Delta']
+ //pop does not take any argument. push adds to the last while pop removes the last element
+
+ var city = ["Abuja","Lagos","Delta","Kaduna"]
+undefined
+city
+(4) ['Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.unshift("Zaria")
+5
+city
+(5) ['Zaria', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.unshift("Lafia","Ibadan")
+7
+city
+(7) ['Lafia', 'Ibadan', 'Zaria', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.shift()
+'Lafia'
+city
+(6) ['Ibadan', 'Zaria', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.shift(2)
+'Ibadan'
+city
+(5) ['Zaria', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+
+// push > add as last first element of array
+// pop > remove the last element in array
+// unshift > add as the first element in array
+// shift > remove the first element in array
+
+//slice is the only operation that does not affect the original array
+var city = ["Abuja","Lagos","Delta","Kaduna"]
+city.unshift("Zamfara","Niger")
+6
+city
+(6) ['Zamfara', 'Niger', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.slice(2,5)
+(3) ['Abuja', 'Lagos', 'Delta']
+city
+(6) ['Zamfara', 'Niger', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.slice(1,-1)
+(4) ['Niger', 'Abuja', 'Lagos', 'Delta']
+city
+(6) ['Zamfara', 'Niger', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+
+//Splice(startIndex,deletecount,values)
+var city = ["Abuja","Lagos","Delta","Kaduna"]
+city
+(4) ['Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.unshift("Jos","Sokoto")
+6
+city
+(6) ['Jos', 'Sokoto', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city.push("Niger")
+7
+city
+(7) ['Jos', 'Sokoto', 'Abuja', 'Lagos', 'Delta', 'Kaduna', 'Niger']
+city.slice(1,-1)
+(5) ['Sokoto', 'Abuja', 'Lagos', 'Delta', 'Kaduna']
+city
+(7) ['Jos', 'Sokoto', 'Abuja', 'Lagos', 'Delta', 'Kaduna', 'Niger']
+//remove 3 values starting from index number 2.
+city.splice(2,3)
+(3) ['Abuja', 'Lagos', 'Delta']
+city
+(4) ['Jos', 'Sokoto', 'Kaduna', 'Niger']
+city.splice(1,0,"Abeokuta","Zamfara")
+city
+(6) ['Jos', 'Abeokuta', 'Zamfara', 'Sokoto', 'Kaduna', 'Niger']
+
+city.indexOf("0")
+-1
+city.indexOf("Jos")
+0
+city.indexOf("Zamfara", "Sokoto")
+2

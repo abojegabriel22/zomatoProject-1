@@ -1,0 +1,25 @@
+function language(name,country){
+    this.name = name
+    this.country = country
+    this.greet = () => {
+        return `say hi to ${name}`
+    }
+}
+
+
+function language(name,country){
+    this.name = name
+    this.country = country
+    this.greet = () => {
+        return `say hi to ${name}`
+    }
+}
+
+let hindi = new language("Idoma","Nigeria")
+hindi
+language {name: 'Idoma', country: 'Nigeria', greet: ƒ}
+hindi.greet()
+'say hi to Idoma'
+let french = new language("french","france")
+french.greet()
+'say hi to french'
