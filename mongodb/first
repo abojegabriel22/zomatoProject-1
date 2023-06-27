@@ -1,0 +1,72 @@
+mongodb
+// Local
+// window
+https://www.mongodb.com/try/download/community
+> Create folder by the of data in c drive
+C:/data
+> Create folder db inside data
+C:/data/db
+
+//mac/linux
+> open terminal
+> mkdir data/db
+
+
+// Cloud
+> https://cloud.mongodb.com/
+> singup with google
+
+/////
+mongo server
+> should always be running if using the application
+// To start mongo server
+*windows
+> open cmd and go inside bin folder
+> C:/program file/mongodb/server/5.3/bin
+> Mongod
+> (start mongo server on port 27017)
+
+
+mongo client(cli)
+> to test any query we need cli
+> to start mongo cli
+* windows
+> open the cmd and go inside bin folder
+> C:\Program Files\MongoDB\Server\5.0\bin
+> Mongo
+
+<!-- mongod --dbpath data/db -->
+
+db.user.insert(
+    [
+        {"Name": "Johnson","City": "Abuja"},
+        {"Name": "Jonathan","City": "Lafia"}
+    ]
+)
+
+db.user.insert({"_id": 1,"Name":"James"})
+db.user.insert({"_id": 1,"Name":"Otom"})
+
+//find on the basis of condition
+db.collection.find({})
+
+db.restaurants.find({state_id: 1}).pretty()
+
+//steps to update db
+db.user.updateOne(
+    {condition},
+    {
+        $set:{
+            data
+        }
+    }
+)
+
+db.orders.updateOne(
+    {"name":"Anchal"},
+    {
+        $unset:{
+            "email":"anchal@gmail.com"
+        }
+    }
+)
