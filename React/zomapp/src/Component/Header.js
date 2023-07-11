@@ -11,17 +11,14 @@ const Header = () =>{
                     <Link className='btn btn-info' to='/'>Home</Link>
                 </div>
                 <div className="social">
-                    <a href="#">
-                        <img src="https://i.ibb.co/YQpNwSZ/facebook.png" alt="facebook img" className="socialLogo"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://i.ibb.co/VHSf51F/instagram.png" alt="inst image" className="socialLogo"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://i.ibb.co/f8v7PyW/youtube.png" alt="youtube img" className="socialLogo"/>
-                    </a>
+                    <Link to='/register' className='btn btn-primary'>
+                        <span className='glyphicon glyphicon-user'></span>Sign Up
+                    </Link>&nbsp;
+                    <Link to='/login' className='btn btn-success'>
+                        <span className='glyphicon glyphicon-log-in'></span>Sign In
+                    </Link>
                 </div>
-    </header>
+            </header>
         </>
     )
 }

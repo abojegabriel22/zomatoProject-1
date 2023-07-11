@@ -20,6 +20,11 @@ header{
     margin-left: 1%;
     text-transform: capitalize;
 }
+.social {
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
 .socialLogo{
     height: 50px;
     float: right;

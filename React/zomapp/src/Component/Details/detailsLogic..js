@@ -2,12 +2,14 @@ import React,{useState,useEffect} from 'react';
 import './details.css';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
+import Header from '../Header';
 
 const base_url = 'https://internfeb.onrender.com';
 
 const DetailDisplay = () => {
-
+    
+    let navigate = useNavigate()
     let [searchParams] = useSearchParams()
     let [restDetails, setrestDetails] = useState()
     let [mealId,] = useState(sessionStorage.getItem('mealId'))
@@ -23,10 +25,16 @@ const DetailDisplay = () => {
 
     },[])
 
+    const proceed = ()=>{
+        navigate(`/placeOrder/${restDetails.restaurant_name}`)
+
+    }
+
     const renderDetails = () => {
         if(restDetails){
             return(
                 <>
+                    <Header/>
                     <div className='tileImage'>
                         <div className='imageClass'>
                             <img src={restDetails.restaurant_thumb} alt={restDetails.restaurant_name}/>
@@ -48,8 +56,8 @@ const DetailDisplay = () => {
                                 </div>
                                 <hr/>
                                 <div className='col-md-12'>
-                                    <Link className="btn btn-danger">Back</Link> &nbsp;&nbsp;
-                                    <button className='btn btn-primary'>Proceed</button>
+                                    <Link className="btn btn-danger" to={`/listing/${mealId}`}>Back</Link> &nbsp;&nbsp;
+                                    <button className='btn btn-primary' onClick={proceed}>Proceed</button>
                                 </div>
 
                     </div>
