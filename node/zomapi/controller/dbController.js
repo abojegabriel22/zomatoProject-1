@@ -30,7 +30,7 @@ async function postData(colName,data){
     let output;
 
     try{
-        output = await db.collection(colName).insert(data)
+        output = await db.collection(colName).insertOne(data)
        
     }
     catch(err){

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
-const url = " http://3.17.216.66:5000/api/auth/register"
+const url = "http://3.17.216.66:5000/api/auth/register"
 
 const Register = () => {
 
@@ -11,7 +11,7 @@ const Register = () => {
         name: "Aboje",
         email: "abojejunior@gmail.com",
         password: "123456789",
-        phone: "08022911266",
+        phone: "08022911266"
     };
 
     const [values, setValues] = useState(initialValues);

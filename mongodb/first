@@ -70,3 +70,96 @@ db.orders.updateOne(
         }
     }
 )
+<div className='row'>
+                            <div className='col-md-6 form-group'>
+                                <label for='fname' className='control-label'>Name</label>
+                                <input className='form-control' id='fname' name='name' value={values.name} onChange={handleInputChange}/>
+                            </div>
+                            <div className='col-md-6 form-group'>
+                                <label for='email' className='control-label'>Email</label>
+                                <input className='form-control' id='email' name='email' value={values.email} onChange={handleInputChange}/>
+                            </div> 
+                            <div className='col-md-6 form-group'>
+                                <label for='password' className='control-label'>Password</label>
+                                <input className='form-control' id='password' type="password" name='password' value={values.phone} onChange={handleInputChange}/>
+                            </div>
+                            <div className='col-md-6 form-group'>
+                                <label for='phone' className='control-label'>Phone</label>
+                                <input className='form-control' id='phone' name='phone' value={values.phone} onChange={handleInputChange}/>
+                            </div>
+                            
+                        </div>
+                        
+a database will not create until or unless there is a record in there
+
+to create a database
+use netflix
+
+db.user.insert({name:"Aboje"})
+db.user.insert({name:"Gabriel"})
+
+to insert multiple records
+db.user.insert(
+    [
+        {name:"James",age:23},
+        {name:"Adam",age:44},
+        {name:"Bright",age:20}
+    ]
+)
+
+_id > primary key 
+Every record will have
+value is always unique
+if you insert _id it will take else it will insert automatically
+
+db.user.insert({_id:1,name:"Ezra"})
+db.user.insert({_id:2,name:"Isaiah"})
+
+//  find on basis of condition
+db.collection.find({})
+db.restaurants.find({state_id:1})
+
+db.restaurants.find({"mealTypes.mealtype_id":1})
+
+db.user.updateOne(
+    {condition},
+    {
+        $set:{
+            data
+        }
+    }
+)
+update with new data
+db.user.updateOne(
+    {"Name":"Aboje"},
+    {
+        $set:{
+            "city":"Lagos"
+        }
+    }
+)
+update with existing data 
+db.user.updateOne(
+    {"Name":"Aboje"},
+    {
+        $set:{
+            "city":"New York",
+            "Country":"America"
+        }
+    }
+)
+delete column
+db.user.updateOne(
+    {"Name":"Aboje"},
+    {
+        $unset:{
+            "city":1
+        }
+    }
+)
+
+//delete
+//remove all
+db.user.removeOne({})
+
+db.user.remove({"_id" : 1})

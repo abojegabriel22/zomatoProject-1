@@ -1,65 +1,38 @@
 {
   "orders": [
     {
-      "id": 90182,
+      "id": 14654,
+      "rest_name": "Pandit Ji Paratha Hut",
+      "name": "Aboje",
+      "email": "abojejunior@gmail.com",
+      "cost": 86,
+      "phone": "08022911266",
+      "address": "A54 Army Estate Kubwa Abuja"
+    },
+    {
+      "id": 26590,
       "rest_name": "Domino's Pizza",
       "name": "Aboje",
       "email": "abojejunior@gmail.com",
-      "cost": 944,
+      "cost": 536,
       "phone": "08022911266",
       "address": "A54 Army Estate Kubwa Abuja"
     },
     {
-      "id": 41749,
+      "id": 72543,
       "rest_name": "Domino's Pizza",
       "name": "Aboje",
       "email": "abojejunior@gmail.com",
-      "cost": 17,
+      "cost": 467,
       "phone": "08022911266",
       "address": "A54 Army Estate Kubwa Abuja"
     },
     {
-      "id": 50696,
-      "rest_name": "Captain Sam's",
-      "name": "james",
-      "email": "abojegabriel20@gmail.com",
-      "cost": 956,
-      "phone": "08148543003",
-      "address": "Zone 7 monkey village"
-    },
-    {
-      "id": 99453,
-      "rest_name": "Chandni Chowk 2 Bangalore",
+      "id": 83932,
+      "rest_name": "Food Adda",
       "name": "Aboje",
       "email": "abojejunior@gmail.com",
-      "cost": 482,
-      "phone": "08022911266",
-      "address": "A54 Army Estate Kubwa Abuja"
-    },
-    {
-      "id": 58053,
-      "rest_name": "Domino's Pizza",
-      "name": "Aboje",
-      "email": "abojejunior@gmail.com",
-      "cost": 535,
-      "phone": "08022911266",
-      "address": "A54 Army Estate Kubwa Abuja"
-    },
-    {
-      "id": 9140,
-      "rest_name": "The Appetite Momos",
-      "name": "Aboje",
-      "email": "abojejunior@gmail.com",
-      "cost": 184,
-      "phone": "08022911266",
-      "address": "A54 Army Estate Kubwa Abuja"
-    },
-    {
-      "id": 80787,
-      "rest_name": "Domino's Pizza",
-      "name": "Aboje",
-      "email": "abojejunior@gmail.com",
-      "cost": 522,
+      "cost": 310,
       "phone": "08022911266",
       "address": "A54 Army Estate Kubwa Abuja"
     }

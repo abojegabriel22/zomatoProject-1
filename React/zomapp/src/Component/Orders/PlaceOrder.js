@@ -3,19 +3,24 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
-const url = " http://localhost:7722/orders"
+const url = "https://internfeb.onrender.com/placeOrder"
 
 const PlaceOrder = () => {
 
     let params = useParams();
     let navigate = useNavigate();
+
+    let sessionData = sessionStorage.getItem('userInfo');
+    let data = JSON.parse(sessionData)
+
+
     const initialValues = {
         id: Math.floor(Math.random()*100000),
         rest_name: params.restName,
-        name: "Aboje",
-        email: "abojejunior@gmail.com",
+        name: data.name,
+        email: data.email,
         cost: Math.floor(Math.random()*1000),
-        phone: "08022911266",
+        phone: data.phone,
         address: "A54 Army Estate Kubwa Abuja",
     };
 
